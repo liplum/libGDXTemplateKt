@@ -4,13 +4,22 @@
 
 ## How to use
 ### Clone this repo
-First, clone this repository.
 You'd better not to hit the green button, `Use this template`, because it will create a new repository referencing to this
 repo.
 
+Run the shell script below in your terminal to clone this repo. It works on both Windows and Unix-like system, if you've installed git.
 ```shell
 git clone --depth 1 https://github.com/liplum/libGDXTemplateGame.git
 ```
+Then change directory to `libGDXTemplateGame` folder, or whatever you named, 
+and delete the `.git` folder that contains git history from this repo. 
+
+### Download release
+Check the [release page](https://github.com/liplum/libGDXTemplateGame/releases) and find which one you want.
+
+You can just download the source code, `.zip` or `.tar.gz`, to get an archive. 
+
+When this template is changed due to an upgrade of libGDX, the release is considered a backup. 
 
 ### Rename to yours
 Then, replace the strings or packages to yours in the following positions.
