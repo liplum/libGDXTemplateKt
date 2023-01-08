@@ -16,13 +16,13 @@ android {
         }
     }
     defaultConfig {
-        val appVersion: String by project
-        val applicationId: String by project
-        this.applicationId = applicationId
+        val androidAppVersion: String by project
+        val androidApplicationId: String by project
+        applicationId = androidApplicationId
         minSdk = 14
         targetSdk = 33
-        versionCode = appVersion.split('.').joinToString("") { it.padStart(2, '0') }.toInt()
-        versionName = appVersion
+        versionCode = androidAppVersion.split('.').joinToString("") { it.padStart(2, '0') }.toInt()
+        versionName = androidAppVersion
     }
     buildTypes {
         named("release") {
