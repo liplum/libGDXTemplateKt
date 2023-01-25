@@ -35,7 +35,7 @@ task<JavaExec>("run") {
     if (Os.isFamily(Os.FAMILY_MAC)) {
         // Required to run on macOS
         @Suppress("UNNECESSARY_NOT_NULL_ASSERTION")
-        jvmArgs!!.add("-XstartOnFirstThread")
+        jvmArgs = jvmArgs!! + "-XstartOnFirstThread"
     }
 }
 task<JavaExec>("debug") {
