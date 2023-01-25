@@ -7,6 +7,13 @@ val appName: String by project
 java {
     sourceCompatibility = JavaVersion.VERSION_1_7
 }
+val assetsDir = File("../assets")
+sourceSets {
+    main {
+        java.srcDirs("src")
+        resources.srcDirs("../assets")
+    }
+}
 dependencies {
     val gdxVersion: String by project
     val roboVMVersion: String by project

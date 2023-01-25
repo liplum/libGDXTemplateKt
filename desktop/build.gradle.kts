@@ -5,13 +5,12 @@ plugins {
 }
 val appName: String by project
 
-
 val mainClassName = "net.liplum.DesktopLauncher"
-val assetsDir = File("../assets")
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
 }
 
+val assetsDir = File("../assets")
 sourceSets {
     main {
         java.srcDirs("src")
@@ -35,6 +34,7 @@ task<JavaExec>("run") {
     isIgnoreExitValue = true
     if (Os.isFamily(Os.FAMILY_MAC)) {
         // Required to run on macOS
+        @Suppress("UNNECESSARY_NOT_NULL_ASSERTION")
         jvmArgs!!.add("-XstartOnFirstThread")
     }
 }
