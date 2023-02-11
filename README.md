@@ -1,6 +1,6 @@
-# libGDX Template
+# libGDX Kotlin Template
 
-### *With Gradle Kotlin DSL*
+To write your game in Kotlin with Gradle Kotlin DSL.
 
 ## How to use
 ### Clone this repo
@@ -9,13 +9,13 @@ repo.
 
 Run the shell script below in your terminal to clone this repo. It works on both Windows and Unix-like system, if you've installed git.
 ```shell
-git clone --depth 1 https://github.com/liplum/libGDXTemplateGame.git
+git clone --depth 1 https://github.com/liplum/libGDXTemplateKt.git
 ```
 Then change directory to `libGDXTemplateGame` folder, or whatever you named, 
 and delete the `.git` folder that contains git history from this repo. 
 
 ### Download release
-Check the [release page](https://github.com/liplum/libGDXTemplateGame/releases) and find which one you want.
+Check the [release page](https://github.com/liplum/libGDXTemplateKt/releases) and find which one you want.
 
 You can just download the source code, `.zip` or `.tar.gz`, to get an archive. 
 
